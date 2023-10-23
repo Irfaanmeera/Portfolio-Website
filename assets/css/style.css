@@ -1144,16 +1144,9 @@ a:hover {
   }
 }
 
-.php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
 
-.php-email-form .sent-message {
+
+.sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1162,14 +1155,14 @@ a:hover {
   font-weight: 600;
 }
 
-.php-email-form .loading {
+.loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.php-email-form .loading:before {
+ .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1181,28 +1174,26 @@ a:hover {
   animation: animate-loading 1s linear infinite;
 }
 
-.php-email-form input,
-.php-email-form textarea {
+ input,textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.php-email-form input:focus,
-.php-email-form textarea:focus {
+ input:focus,
+ textarea:focus {
   border-color: #0078ff;
 }
 
-.php-email-form input {
+input {
   padding: 10px 15px;
 }
 
-.php-email-form textarea {
+ textarea {
   padding: 12px 15px;
   margin-bottom: 0;
 }
-
-.php-email-form button[type=submit] {
+button[type=submit] {
   background: #0078ff;
   border: 0;
   padding: 10px 24px;
@@ -1210,7 +1201,7 @@ a:hover {
   transition: 0.4s;
 }
 
-.php-email-form button[type=submit]:hover {
+ button[type=submit]:hover {
   background: #3393ff;
 }
 
@@ -1439,6 +1430,7 @@ a:hover {
   color: #fff;
 }
 
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1460,3 +1452,31 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+
+
+
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
